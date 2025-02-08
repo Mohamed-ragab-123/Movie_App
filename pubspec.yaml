@@ -1,0 +1,67 @@
+name: movie_app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+ 
+  cupertino_icons: ^1.0.8
+  flutter_native_splash: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+ 
+  flutter_lints: ^4.0.0
+
+
+
+
+flutter:
+
+ 
+  uses-material-design: true
+
+ 
+  assets:
+    - assets/images/
+  
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+
+
+flutter_native_splash:
+
+  color: "#121312"
+  image: assets/images/icon_splash.png
+  branding: assets/images/branding_splash.png
+  branding_bottom_padding: 24
+
+  android_12:
+    image: assets/images/icon_splash.png
+    color: "#121312"
+    branding: assets/images/branding_splash.png
