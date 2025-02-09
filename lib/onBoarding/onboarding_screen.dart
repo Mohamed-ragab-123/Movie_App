@@ -36,13 +36,13 @@ class OnboardingScreen extends StatelessWidget {
                 const Text(
                   'Get access to a huge library of movies\nto suit all tastes. You will surely like it.',
                   textAlign: TextAlign.center,
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: Colors.white70,
                     fontSize: 20,
                   ),
                 ),
                 const SizedBox(height: 24),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
