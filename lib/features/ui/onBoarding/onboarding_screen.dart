@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/onBoarding/onboarding_screen2.dart';
+import 'package:movie_app/features/ui/onBoarding/onboarding_screen2.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
+
   static const String routeName = "OnbordingScreen";
 
   @override

@@ -18,7 +18,7 @@ class ForgetPasswordScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.blackColor,
         title: Text(
-          AppLocalizations.of(context)!.forgetPassword,
+          AppLocalizations.of(context).forgetPassword,
           style: Theme.of(context)
               .textTheme
               .headlineMedium!
@@ -47,7 +47,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   fillColor: AppColors.greyColor,
                   filled: true,
-                  labelText: AppLocalizations.of(context)!.email,
+                  labelText: AppLocalizations.of(context).email,
                   labelStyle: Theme.of(context)
                       .textTheme
                       .headlineMedium!
@@ -86,7 +86,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12)),
                     backgroundColor: AppColors.yellowColor),
                 child: Text(
-                  AppLocalizations.of(context)!.verifyEmail,
+                  AppLocalizations.of(context).verifyEmail,
                   style: Theme.of(context)
                       .textTheme
                       .headlineLarge!
