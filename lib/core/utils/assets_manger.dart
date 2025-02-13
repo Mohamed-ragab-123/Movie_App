@@ -1,0 +1,31 @@
+class AssetManger {
+  static const String forgetPassword = "assets/images/Forgot password.png";
+  static const String logo = "assets/images/logo.png";
+  static const String iconHome = "assets/images/icon/home.png";
+  static const String iconSearch = "assets/images/icon/search.png";
+  static const String iconFavorite = "assets/images/icon/love.png";
+  static const String iconProfile = "assets/images/icon/Profile.png";
+  static const String iconPlay = "assets/images/icon/play.png";
+  static const String iconList = "assets/images/icon/list.png";
+  static const String iconFolder = "assets/images/icon/Folder.png";
+  static const String iconExplore = "assets/images/icon/explore.png";
+  static const String iconStar = "assets/images/icon/star.png";
+  static const String iconTime = "assets/images/icon/time.png";
+  static const String iconName = "assets/images/icon/Name.png";
+  static const String iconEmail = "assets/images/icon/email.png";
+  static const String iconPassword = "assets/images/icon/password.png";
+  static const String iconEyeOff = "assets/images/icon/eye off.png";
+  static const String iconPhoneNumber = "assets/images/icon/phone.png";
+  static const String iconGoogle = "assets/images/icon/icon google.png";
+  static const String iconEgyFlag = "assets/images/icon/EG.png";
+  static const String iconUsaFlag = "assets/images/icon/USA.png";
+  static const String avatarOne = "assets/images/avatar/gamer.png";
+  static const String avatarTwo = "assets/images/avatar/gamer 2.png";
+  static const String avatarThree = "assets/images/avatar/gamer 3.png";
+  static const String avatarFour = "assets/images/avatar/gamer 4.png";
+  static const String avatarFive = "assets/images/avatar/gamer 5.png";
+  static const String avatarSix = "assets/images/avatar/gamer 6.png";
+  static const String avatarSeven = "assets/images/avatar/gamer 7.png";
+  static const String avatarEight = "assets/images/avatar/gamer 8.png";
+  static const String avatarNine = "assets/images/avatar/gamer 9.png";
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/features/ui/auth/login/login_screen.dart';
 import 'package:movie_app/home.dart';
 
 class OnboardingScreen2 extends StatelessWidget {
@@ -124,7 +125,7 @@ class _MovieOnboardingScreenState extends State<MovieOnboardingScreen> {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const Home()),
+                                builder: (context) => LoginScreen()),
                           );
                         }
                       },

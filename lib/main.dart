@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/home.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:movie_app/bloc/language_bloc_manger.dart';
+import 'package:movie_app/core/utils/app_theme.dart';
+import 'package:movie_app/features/ui/auth/login/forget_password_screen.dart';
+import 'package:movie_app/features/ui/auth/login/login_screen.dart';
+import 'package:movie_app/features/ui/auth/register/register_screen.dart';
+import 'package:movie_app/features/ui/home/home_screen.dart';
+import 'package:movie_app/l10n/app_localizations.dart';
 import 'package:movie_app/onBoarding/onboarding_screen.dart';
 
+
 void main() {
-  runApp(const MyApp());
+  runApp(
+    BlocProvider(
+      create: (context) => LanguageBloc(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -16,8 +29,15 @@ class MyApp extends StatelessWidget {
       initialRoute: OnboardingScreen.routeName,
       routes: {
         OnboardingScreen.routeName: (context) => const OnboardingScreen(),
-        Home.routeName: (context) => const Home(),
+        LoginScreen.routeName: (context) => LoginScreen(),
+        ForgetPasswordScreen.routeName: (context) => ForgetPasswordScreen(),
+        RegisterScreen.routeName: (context) => RegisterScreen(),
+        HomeScreen.routeName: (context) => const HomeScreen(),
       },
+      theme: AppTheme.darkTheme,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      locale: context.watch<LanguageBloc>().state.locale,
     );
   }
 }
