@@ -7,13 +7,18 @@ import 'package:movie_app/core/utils/assets_manger.dart';
 import 'package:movie_app/features/ui/auth/login/forget_password_screen.dart';
 import 'package:movie_app/features/ui/auth/register/register_screen.dart';
 import 'package:movie_app/l10n/app_localizations.dart';
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
-class LoginScreen extends StatelessWidget {
   static const String routeName = "loginScreen";
 
-  LoginScreen({super.key});
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
 
+class _LoginScreenState extends State<LoginScreen> {
   var emailController = TextEditingController();
+
   var passwordController = TextEditingController();
 
   @override
@@ -53,17 +58,17 @@ class LoginScreen extends StatelessWidget {
                   ),
                   border: OutlineInputBorder(
                     borderSide:
-                        const BorderSide(width: 2, color: AppColors.whiteColor),
+                    const BorderSide(width: 2, color: AppColors.whiteColor),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide:
-                        const BorderSide(width: 2, color: AppColors.greyColor),
+                    const BorderSide(width: 2, color: AppColors.greyColor),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide:
-                        const BorderSide(width: 2, color: AppColors.greyColor),
+                    const BorderSide(width: 2, color: AppColors.greyColor),
                     borderRadius: BorderRadius.circular(16),
                   ),
                 ),
@@ -97,17 +102,17 @@ class LoginScreen extends StatelessWidget {
                   ),
                   border: OutlineInputBorder(
                     borderSide:
-                        const BorderSide(width: 2, color: AppColors.greyColor),
+                    const BorderSide(width: 2, color: AppColors.greyColor),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide:
-                        const BorderSide(width: 2, color: AppColors.greyColor),
+                    const BorderSide(width: 2, color: AppColors.greyColor),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide:
-                        const BorderSide(width: 2, color: AppColors.greyColor),
+                    const BorderSide(width: 2, color: AppColors.greyColor),
                     borderRadius: BorderRadius.circular(16),
                   ),
                 ),
@@ -171,9 +176,9 @@ class LoginScreen extends StatelessWidget {
                             .textTheme
                             .headlineSmall!
                             .copyWith(
-                                color: AppColors.yellowColor,
-                                fontSize: 18,
-                                decoration: TextDecoration.underline),
+                            color: AppColors.yellowColor,
+                            fontSize: 18,
+                            decoration: TextDecoration.underline),
                       ),
                     ])),
               ),

@@ -5,6 +5,7 @@ import 'package:movie_app/core/utils/app_colors.dart';
 class AppTheme {
   static final ThemeData darkTheme = ThemeData(
     textTheme: TextTheme(
+
       headlineLarge: GoogleFonts.roboto(
         fontSize: 20,
         fontWeight: FontWeight.w400,
