@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/core/utils/app_colors.dart';
 import 'package:movie_app/core/utils/assets_manger.dart';
-import 'package:movie_app/features/ui/auth/login/login_screen.dart';
 import 'package:movie_app/home.dart';
 
 
