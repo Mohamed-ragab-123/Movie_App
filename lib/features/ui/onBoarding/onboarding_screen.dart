@@ -1,9 +1,15 @@
+
 import 'package:flutter/material.dart';
-import 'package:movie_app/onBoarding/onboarding_screen2.dart';
+import 'package:movie_app/core/utils/app_colors.dart';
+import 'package:movie_app/core/utils/assets_manger.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'onboarding_screen2.dart';
+
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
-  static const String routeName = "OnbordingScreen";
+  static const String routeName = "OnboardingScreen";
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +18,7 @@ class OnboardingScreen extends StatelessWidget {
         children: [
           Positioned.fill(
             child: Image.asset(
-              'assets/images/OnBoarding1.png',
+              AssetManger.onBoarding1,
               fit: BoxFit.cover,
             ),
           ),
@@ -23,49 +29,45 @@ class OnboardingScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text(
-                  'Find Your Next\nFavorite Movie Here',
+                 Text(
+                  'Find Your Next Favorite Movie Here',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
+                  style: GoogleFonts.inter(
+                    color: AppColors.whiteColor,
                     fontSize: 36,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
                 const SizedBox(height: 16),
-                const Text(
-                  'Get access to a huge library of movies\nto suit all tastes. You will surely like it.',
+                 Text(
+                  'Get access to a huge library of movies to suit all tastes. You will surely like it.',
                   textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Colors.white70,
+                  style: GoogleFonts.inter(
+                    color: AppColors.whiteColor,
                     fontSize: 20,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
                 const SizedBox(height: 24),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const OnboardingScreen2(),
-                        ),
-                      );
+                      Navigator.pushNamed(context, OnboardingScreen2.routeName);
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFF6BD00),
+                      backgroundColor: AppColors.yellowColor,
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
                     ),
-                    child: const Text(
+                    child:  Text(
                       'Explore Now',
-                      style: TextStyle(
-                        color: Color(0xFF121312),
-                        fontSize: 18,
-                        fontWeight: FontWeight.w700,
+                      style: GoogleFonts.inter(
+                        color: AppColors.blackColor,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ),
