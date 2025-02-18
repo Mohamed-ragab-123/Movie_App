@@ -6,6 +6,7 @@ class AssetManger {
   static const String iconFavorite = "assets/images/icon/love.png";
   static const String iconProfile = "assets/images/icon/Profile.png";
   static const String iconPlay = "assets/images/icon/play.png";
+  static const String iconArrow = "assets/images/icon/Arrow.png";
   static const String iconList = "assets/images/icon/list.png";
   static const String iconFolder = "assets/images/icon/Folder.png";
   static const String iconExplore = "assets/images/icon/explore.png";

@@ -8,7 +8,7 @@ import 'package:movie_app/features/ui/auth/register/cubit/register_states.dart';
 class RegisterViewModel extends Cubit<RegisterStates> {
   RegisterUseCase registerUseCase;
 
-  RegisterViewModel(this.selectedAvatarIndex,  {required this.registerUseCase})
+  RegisterViewModel(this.selectedAvatarIndex, {required this.registerUseCase})
       : super(RegisterInitialState());
   var nameController = TextEditingController();
   var emailController = TextEditingController();

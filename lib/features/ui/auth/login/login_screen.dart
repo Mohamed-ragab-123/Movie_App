@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movie_app/bloc/language_bloc.dart';
-import 'package:movie_app/bloc/language_bloc_manger.dart';
 import 'package:movie_app/core/utils/app_colors.dart';
 import 'package:movie_app/core/utils/assets_manger.dart';
 import 'package:movie_app/features/ui/auth/login/forget_password_screen.dart';
@@ -9,7 +8,7 @@ import 'package:movie_app/features/ui/auth/register/register_screen.dart';
 import 'package:movie_app/l10n/app_localizations.dart';
 
 class LoginScreen extends StatelessWidget {
-  static const String routeName = "loginScreen";
+  static const String routeName = "/loginScreen";
 
   LoginScreen({super.key});
 

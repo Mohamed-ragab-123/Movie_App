@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/features/ui/auth/login/login_screen.dart';
+import 'package:movie_app/features/ui/home/home_screen.dart';
 
 class OnboardingScreen2 extends StatelessWidget {
   const OnboardingScreen2({super.key});
@@ -121,11 +122,9 @@ class _MovieOnboardingScreenState extends State<MovieOnboardingScreen> {
                           );
                           _showBottomSheet();
                         } else {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => LoginScreen()),
-                          );
+                          Navigator.pushReplacementNamed(
+                            context, HomeScreen.routeName);
+
                         }
                       },
                       style: ElevatedButton.styleFrom(

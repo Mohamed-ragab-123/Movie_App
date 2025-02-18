@@ -15,7 +15,7 @@ import 'package:movie_app/l10n/app_localizations.dart';
 
 void main() {
   configureDependencies();
-  Bloc.observer = MyBlocObserver();
+  // Bloc.observer = MyBlocObserver();
 
   runApp(
     MultiBlocProvider(
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           // initialRoute: OnboardingScreen.routeName,
-          initialRoute: LoginScreen.routeName,
+          initialRoute: HomeScreen.routeName,
           routes: {
             OnboardingScreen.routeName: (context) => const OnboardingScreen(),
             LoginScreen.routeName: (context) => LoginScreen(),

@@ -22,16 +22,16 @@ abstract class LanguageState extends Equatable {
 }
 
 class LanguageInitial extends LanguageState {
-  LanguageInitial() : super(const Locale('en'));
+  const LanguageInitial() : super(const Locale('en'));
 }
 
 class LanguageChanged extends LanguageState {
-  const LanguageChanged(Locale locale) : super(locale);
+  const LanguageChanged(super.locale);
 }
 
 // ----- [ BLoC ] -----
 class LanguageBloc extends Bloc<LanguageEvent, LanguageState> {
-  LanguageBloc() : super(LanguageInitial()) {
+  LanguageBloc() : super(const LanguageInitial()) {
     on<ToggleLanguage>((event, emit) {
       final newLocale =
       (state.locale.languageCode == 'en') ? const Locale('ar') : const Locale('en');
